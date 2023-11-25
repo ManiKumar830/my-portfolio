@@ -35,12 +35,12 @@ function App() {
       {/* main page content */}
       <div className="App__main-page-content">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/resume" element={<Resume />} />
+        <Route exact path="/skills" element={<Skills />} />
+        <Route exact path="/portfolio" element={<Portfolio />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
       </div>
 
