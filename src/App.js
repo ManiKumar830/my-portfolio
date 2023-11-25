@@ -19,7 +19,7 @@ function App() {
     await loadFull(main);
   };
 
-  const renderParticleJsInHomePage = location.pathname === "/";
+  const renderParticleJsInHomePage = location.pathname === "/my-portfolio";
 
   return (
     <div className="App">
@@ -35,7 +35,7 @@ function App() {
       {/* main page content */}
       <div className="App__main-page-content">
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/my-portfolio" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/resume" element={<Resume />} />
         <Route exact path="/skills" element={<Skills />} />
@@ -43,7 +43,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
       </Routes>
       </div>
-
+  
     </div>
   );
 }
